@@ -37,7 +37,10 @@ The [student guide](classroom/README.md) has the checkpoints and hand-in details
 ### Watch for saved answers.
 
 The agent starts the watcher when the lesson begins. With the Codex App
-Server running, it attaches the watcher to the current lesson conversation:
+Server running, it attaches to the current conversation whether it started in
+the lesson folder or a parent folder. Run the command from the lesson folder.
+The watcher sets the conversation’s working directory to the lesson folder
+when it forwards a saved response.
 
 ```sh
 uv run --locked python lesson.py watch --thread "$CODEX_THREAD_ID"

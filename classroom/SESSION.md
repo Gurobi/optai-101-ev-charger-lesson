@@ -4,6 +4,10 @@ Students decide what to investigate, check the agent’s work and give the commi
 
 ## Open the workspace
 
+Run the viewer and watcher commands from the lesson repository. A Codex
+conversation opened in a parent folder can stay open. The watcher sets its
+working directory to the lesson repository when it forwards a saved response.
+
 1. Reuse the viewer for this workspace if it serves `/api/responses`. If that route returns 404, restart the viewer on the same port. To start it, run `python3 lesson.py ui` in a background process that persists across turns. If system Python is unavailable or older than 3.11, use `uv run --locked python lesson.py ui`.
 2. Start the response watcher in a background process that persists across turns, and verify its startup message names this lesson conversation. In Codex, run `uv run --locked python lesson.py watch --thread "$CODEX_THREAD_ID"` and capture its output in a local log. If the thread ID is unavailable, identify the current conversation before starting it; do not silently create a separate conversation. Reuse a watcher only if it is attached to this conversation. If another watcher holds the workspace lock, stop it before starting the correct one. For Claude Code, use its Monitor tool with `uv run --locked python lesson.py watch --events` where available and treat each event's message as a student turn. If the watcher cannot start, tell the students to name the saved prompt in chat so you can respond.
 3. Give students the printed URL, usually `http://127.0.0.1:8765/`, or the preview or forwarded URL for a remote workspace. In a Docker sandbox that requires host port publishing, bind with `--host 0.0.0.0` and give them the host command with the sandbox name and printed port.

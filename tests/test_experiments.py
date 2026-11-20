@@ -14,7 +14,7 @@ from contextlib import redirect_stderr
 from io import StringIO
 from pathlib import Path
 from threading import Thread
-from unittest.mock import patch
+from unittest.mock import Mock, patch
 from urllib.error import HTTPError
 from urllib.request import Request, urlopen
 
@@ -403,6 +403,35 @@ def build_model(demand, parameters, budget):
             finally:
                 http.shutdown()
                 listener.join()
+
+    def test_watch_attaches_to_parent_thread_and_sends_from_lesson(self):
+        from classroom import watch
+
+        parent = Path(self.temp.name).resolve()
+        root = parent / "lesson"
+        with patch.object(watch, "ROOT", root), patch.object(
+            watch.CodexThread, "call"
+        ) as call:
+            agent = watch.CodexThread(Mock())
+            call.reset_mock()
+            call.return_value = {"thread": {"cwd": str(parent)}}
+            self.assertEqual(agent.attach("existing-thread"), "existing-thread")
+            call.assert_called_once_with(
+                "thread/read", {"threadId": "existing-thread", "includeTurns": False}
+            )
+
+            call.return_value = {"turn": {"id": "saved-answer"}}
+            self.assertEqual(
+                agent.send("existing-thread", "Student answer", "idle"), "saved-answer"
+            )
+            method, params = call.call_args.args
+            self.assertEqual(method, "turn/start")
+            self.assertEqual(params["threadId"], "existing-thread")
+            self.assertEqual(params["cwd"], str(root))
+
+            call.return_value = {"thread": {"cwd": str(parent / "less")}}
+            with self.assertRaisesRegex(ValueError, "lesson folder or a parent folder"):
+                agent.attach("unrelated-thread")
 
     def test_watch_queues_only_changed_responses(self):
         from classroom.watch import collect_changes, student_message

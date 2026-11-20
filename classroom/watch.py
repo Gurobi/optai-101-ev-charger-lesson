@@ -55,8 +55,10 @@ class CodexThread:
         details = self.call("thread/read", {"threadId": thread, "includeTurns": False})[
             "thread"
         ]
-        if Path(details["cwd"]).resolve() != ROOT.resolve():
-            raise ValueError("The Codex conversation belongs to a different workspace.")
+        if not ROOT.resolve().is_relative_to(Path(details["cwd"]).resolve()):
+            raise ValueError(
+                "The Codex conversation must be opened in the lesson folder or a parent folder."
+            )
         return thread
 
     def status(self, thread: str) -> str:
@@ -72,6 +74,7 @@ class CodexThread:
             "turn/start",
             {
                 "threadId": thread,
+                "cwd": str(ROOT),
                 "input": [{"type": "text", "text": prompt, "text_elements": []}],
             },
         )
