@@ -118,7 +118,7 @@
     "id": "forecast",
     "name": "Forecast",
     "time": "12–22 min",
-    "overview": "Estimate one quantity you need to choose a site and decide which assumptions you can use.",
+    "overview": "Forecast the same quantity for multiple ZIP areas so you can compare candidate sites.",
     "oldHeadings": [
       "Forecast demand"
     ],
@@ -127,8 +127,8 @@
         "id": "target",
         "label": "Target",
         "title": "Choose what to estimate.",
-        "response": "What will you estimate? Include the units, area, and time horizon.",
-        "hint": "Specify a quantity you could check, such as sessions per day in one ZIP area in a given year.",
+        "response": "What will you estimate? Include the units, ZIP areas, and time horizon.",
+        "hint": "Specify a quantity you could check, such as sessions per day in each candidate ZIP area in a given year.",
         "previousEdition": true
       },
       {
@@ -142,20 +142,20 @@
       {
         "id": "estimate",
         "label": "Estimate",
-        "title": "Get a first estimate.",
-        "prompt": "Ask the agent for a first estimate or range in your chosen units and have it show the inputs and assumptions.",
+        "title": "Get a first estimate for each ZIP area.",
+        "prompt": "Ask the agent for a first estimate or range for each ZIP area in your chosen units and have it show the inputs and assumptions.",
         "evidence": "forecast",
-        "response": "How should the agent present the estimate so you can check it?",
+        "response": "How should the agent present the ZIP-area estimates so you can compare and check them?",
         "previousEdition": true
       },
       {
         "id": "method",
         "label": "Method",
-        "title": "Make a forecast for one area.",
+        "title": "Make a forecast by ZIP area.",
         "response": "What would you like to estimate?",
-        "hint": "A short answer is enough. If you have an area or data source in mind, include it. The agent can propose the remaining details.",
-        "action": "Choose a quantity that would help you decide where to add charging ports. Start with one area and one time period.",
-        "prompt": "Start from the pair’s short answer and Explore notes. Propose reasonable defaults for missing details such as area, period, units and method, and label them as assumptions. Put a concise provisional estimate or range, sources, key assumptions, equation, and proposed code in Forecast notes. Do not send the pair back to Method for missing details or ask them to calculate.",
+        "hint": "A short answer is enough. If you have ZIP areas or a data source in mind, include them. The agent can propose the remaining details.",
+        "action": "Choose a quantity that would help you decide where to add charging ports. Use the same time period for all ZIP areas.",
+        "prompt": "Start from the pair’s short answer and Explore notes. Propose reasonable defaults for missing details such as candidate ZIP areas, period, units and method, and label them as assumptions. If the pair names fewer than two ZIP areas, propose additional areas from the Michigan data so they can compare sites. In Forecast notes, show one estimate or range per candidate ZIP area in a table, with sources, key assumptions, the equation, and proposed code. Do not send the pair back to Method for missing details or ask them to calculate.",
         "fillMissingDetails": true
       },
       {
@@ -166,7 +166,7 @@
         "hint": "Choose once. If no, you can note what you would change.",
         "notes": true,
         "evidence": "forecast",
-        "action": "Review the estimate, equation, code and assumptions.",
+        "action": "Compare the ZIP-area estimates and review the equation, code and assumptions.",
         "prompt": "For Yes, retain the proposal. For No, keep the provisional forecast and record any suggested change as a limitation. The viewer displays the pacing message and stays on Forecast until the pair chooses Continue to Formulate. Do not revise the forecast or ask for another approval."
       },
       {
@@ -175,7 +175,7 @@
         "title": "Record the forecast and its limits.",
         "action": "Distinguish what you observed from what you assumed.",
         "notes": true,
-        "response": "What was your estimate, and which assumption would you test?",
+        "response": "How did your estimates vary by ZIP area, and which assumption would you test?",
         "previousEdition": true
       }
     ]

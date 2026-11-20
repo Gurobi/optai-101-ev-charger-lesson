@@ -1,4 +1,4 @@
-import { esc, figure, map, num, renderNotes } from "./notes.js";
+import { bars, esc, figure, map, num, renderNotes } from "./notes.js";
 
 const byId = (id) => document.getElementById(id);
 const usd = (value) => "$" + num(value);
@@ -100,9 +100,13 @@ function forecast(work) {
   const demand = work.demand;
   if (!demand.length) return "";
   const total = demand.reduce((sum, row) => sum + row[1], 0);
+  const zipForecasts = demand.map(([zcta, evs]) => [zcta, evs]);
+  const highest = [...zipForecasts].sort((a, b) => b[1] - a[1]).slice(0, 10);
   return `<section class="evidence"><h3>EV-equivalent forecast.</h3>
     <p>${num(total)} EVs across ${num(demand.length)} ZIP areas, expressed as a discounted ten-year average.</p>
-    ${figure("map", "Forecast EVs by ZIP area", map(state.areas, demand.map(([zcta, evs]) => [zcta, evs])))}</section>`;
+    ${figure("", "Highest forecasts by ZIP area.", bars(highest),
+      `Showing ${highest.length} of ${num(demand.length)} ZIP areas by forecast EV equivalents.`)}
+    ${figure("map", "Forecast EVs by ZIP area", map(state.areas, zipForecasts))}</section>`;
 }
 
 function formulation(work) {

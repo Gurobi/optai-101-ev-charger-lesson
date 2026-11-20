@@ -9,7 +9,7 @@ The viewer saves student answers separately in work/responses/. Leave future pha
 
 ## Forecast.
 
-<!-- Show a concise estimate, source values and assumptions for one area, its equation and proposed code. After the one Yes/No decision, show the final estimate and remaining uncertainty without another approval question. -->
+<!-- Show a table with one estimate or range per candidate ZIP area, along with source values, assumptions, the equation and proposed code. After the one Yes/No decision, show the final ZIP-area estimates and remaining uncertainty without another approval question. -->
 
 ## Formulate.
 

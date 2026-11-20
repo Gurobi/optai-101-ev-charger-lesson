@@ -51,7 +51,7 @@ on screen. Put the viewer beside the chat, and keep this guide and the
 
 Choose **Start** and take the student’s role. Start from a choice the committee faces, such as where it might fund a pilot. Advance through the six tables in order. Point out one quantity you can read directly and another you would need to predict. Have the presenter use an `@agent` table note to ask for the comparison or definition they need. After the last table, read the reply on **Notes and replies**, then choose **Start forecasting**.
 
-For example, a registration table counts vehicles by home ZIP. A station record can identify ports already installed there. Neither reports how often drivers use those ports. Think aloud about how a forecast error could reverse a choice between two proposed sites. Calculate one estimate during Forecast, then use it as an input to the site selection model during Formulate. Keep the historical figures off screen until the debrief.
+For example, a registration table counts vehicles by home ZIP. A station record can identify ports already installed there. Neither reports how often drivers use those ports. Think aloud about how a forecast error could reverse a choice between two proposed sites. Calculate an estimate for each candidate ZIP area during Forecast, then use those estimates as inputs to the site selection model during Formulate. Keep the historical figures off screen until the debrief.
 
 ## During class.
 

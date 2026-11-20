@@ -31,7 +31,7 @@ Start with the source tables. The viewer presents them one page at a time. Stude
 
 ## 12–22 minutes · Forecast
 
-In **Method**, accept a short statement of what the pair wants to estimate. Use their Explore notes and propose defaults for any missing area, period, units or calculation. Put a concise provisional estimate or range, sources, assumptions, equation and proposed code in Forecast notes. Run `uv run --locked python lesson.py forecast` if the pair chooses the supplied EV-equivalent forecast. Otherwise estimate the pair’s target from the available data or a documented proxy.
+In **Method**, accept a short statement of what the pair wants to estimate. Use their Explore notes and propose defaults for any missing candidate ZIP areas, period, units or calculation. If the pair names fewer than two ZIP areas, propose additional areas from the Michigan data. Use a common period and units so the pair can compare sites. In Forecast notes, show one provisional estimate or range per candidate ZIP area in a table, along with sources, assumptions, the equation and proposed code. Run `uv run --locked python lesson.py forecast` if the pair chooses the supplied EV-equivalent forecast. Otherwise estimate the pair’s target from the available data or a documented proxy.
 
 In **Assumptions**, students make one Yes/No decision about the proposal and may suggest a change. On Yes, retain it. On No, keep the provisional forecast and record the pair’s concern as a limitation. The viewer stays on Forecast and displays the pacing message. Let the pair choose **Continue to Formulate** when ready. The agent does the calculation.
 

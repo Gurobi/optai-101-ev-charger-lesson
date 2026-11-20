@@ -24,7 +24,7 @@ const tick = (x, y, label, anchor = "start") =>
 const short = (value) => Math.abs(value) >= 1e6 ? num(value / 1e6, 1) + "M"
   : Math.abs(value) >= 1e4 ? num(value / 1e3) + "k" : num(value, value % 1 ? 2 : 0);
 
-function bars(rows) {
+export function bars(rows) {
   if (!rows.length) return "";
   const width = 480;
   const rowHeight = 24;

@@ -1,8 +1,8 @@
 # Plan EV charging in Michigan.
 
-A company has up to $1 million to invest in Level 2 or DC fast charging. Where in Michigan should it build? Would a pilot, or a decision to wait, be a better use of the money?
+A company has up to $1 million to invest in Level 2 or DC fast charging. How many Level 2 and DC fast charging ports should you install in each Michigan ZIP code? You can recommend a build, a pilot, or waiting for better evidence.
 
-Two students share a coding agent for one hour. The pair reads Michigan’s EV records and chooses a quantity to forecast before deciding where to add ports. They review the forecast assumptions and write a model for the investment decision. Before the agent tests the plan, the students
+Two students share a coding agent for one hour. The pair reads Michigan’s EV records and chooses a quantity to forecast by ZIP area before deciding where to add ports. They review the forecast assumptions and write a model for the investment decision. Before the agent tests the plan, the students
 predict what will happen if one of their assumptions changes. They finish
 with a 90-second recommendation to the investment committee.
 
@@ -52,21 +52,13 @@ To use Claude Code, ask it to run `uv run --locked python lesson.py watch
 event's `message` as the student’s next lesson turn. Choose one watcher
 per workspace and stop it at the end of the lesson.
 
-## Use a web-based chat.
+## Use any web-connected chatbot.
 
-If you only have browser chat, use the [student guide](classroom/README.md)
-as a worksheet. Give the chat the guide and the relevant table excerpts
-from the [data sources](data/README.md). Paste the material if the chat
-can't open GitHub links.
-
-> Guide us through Explore, Forecast, Formulate, Test, and Recommend one
-> step at a time. Use the supplied data. Ask us to choose our assumptions
-> and predict the outcome before checking a small case by hand.
-
-For Test, compare your prediction with the [saved reference plan](model/reference/README.md)
-and [half-budget plan](model/half_budget/README.md), or check a small case
-by hand. Record your reasoning and recommendation in one Markdown file
-per pair. This route works entirely in chat and uses manual hand-in.
+Open the [chat-only worksheet](classroom/CHAT_ONLY.md) and paste the starter
+prompt into your chatbot. The prompt includes the data and works in a
+text-only chat, with no repo access, code execution, or Gurobi license
+required. Keep the saved results on the worksheet until Test and hand in
+one Markdown file per pair.
 
 ## Teach the lesson.
 

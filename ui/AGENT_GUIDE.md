@@ -9,7 +9,7 @@ when to show each piece of evidence.
 | Tab | Write in `work/notes.md` | Shown from other files |
 |---|---|---|
 | Explore | Answers to any data questions, in order, with their sources | Six tables, then Notes and replies, which shows the saved notes and tagged replies together. Its button opens Forecast. |
-| Forecast | Concise estimate, sources, assumptions, equation, proposed code, and the final revision | EV-equivalent map in Assumptions when using the supplied forecast |
+| Forecast | Estimates by ZIP area, sources, assumptions, equation, proposed code, and remaining uncertainty | EV-equivalent map in Assumptions when using the supplied forecast |
 | Formulate | The agreed equations, variable domains, units, and a traced example | Parameters and implemented model in Implement |
 | Test | Checks, results, and any failed attempts | Run summary, logs and selected sites in Predict, and runs side by side in Compare. Saved reference plans appear when explicitly loaded. |
 | Recommend | Calculations or evidence the student requests | The submission assembles the student's saved answers |
@@ -75,9 +75,9 @@ source, geographic unit or coordinates, and filters in the caption or notes.
 
 ## Forecasts and model runs.
 
-Show a student-defined forecast as a table or figure in Forecast notes.
-Include the target, units, geography, horizon, method and provisional estimate. Ask up to three numbered yes-or-no questions about specific assumptions in Forecast notes.
-The optional EV map reads the supplied EV-equivalent forecast in
+Show the student-defined forecast in Forecast notes with one estimate or range per candidate ZIP area in a table. Include the target, common units and horizon, sources, method and assumptions. Use the viewer’s single Yes/No decision in Assumptions.
+When the student asks for a graph, use a `bars` block to compare the candidate ZIP areas if the forecast has point estimates. Include the units and horizon in the chart title.
+The EV bar chart and map read the supplied EV-equivalent forecast in
 `work/demand.csv`. Standalone models can store their inputs in any workspace file format.
 
 ### Run the pair’s own model.
