@@ -156,6 +156,16 @@ function runTable(title, runs) {
     runs.map((run) => [run.record.scenario || "Revenue model", run.budget == null ? "" : usd(run.budget), ...totals(run), outcome(run)]));
 }
 
+function solverLog(run) {
+  if (run.log.trim()) {
+    const heading = run.record.outcome === "started" ? "Gurobi log (live)." : "Gurobi log.";
+    return `<h4>${heading}</h4><pre>${esc(run.log.trim())}</pre>`;
+  }
+  return run.record.outcome === "started"
+    ? '<p class="muted">Waiting for Gurobi output…</p>'
+    : "";
+}
+
 function planDetails(run) {
   const { record, sites } = run;
   const facts = [];
@@ -166,7 +176,6 @@ function planDetails(run) {
   if (record.objective_bound != null) facts.push(`${usd(record.objective_bound)} bound`);
   if (record.runtime_seconds != null) facts.push(`${num(record.runtime_seconds, 2)} s solve time`);
   if (record.error_type) facts.push(record.error_type);
-  const log = run.log ? `<h4>Gurobi log.</h4><pre>${esc(run.log.trim())}</pre>` : "";
   let plan = "";
   if (sites.length) {
     const mapped = sites.map((site) => [site.zcta, Number(site.count), Number(site.level) === 3]);
@@ -183,7 +192,7 @@ function planDetails(run) {
   } else if (record.outcome === "checked") {
     plan = "<p>The checked plan installs zero ports.</p>";
   }
-  return (facts.length ? `<p>${esc(facts.join(" · "))}</p>` : "") + plan + log;
+  return solverLog(run) + (facts.length ? `<p>${esc(facts.join(" · "))}</p>` : "") + plan;
 }
 
 function runEvidence(work, view) {
@@ -191,11 +200,13 @@ function runEvidence(work, view) {
   if (!runs.length && !examples.length) return "";
   const attempts = [...runs].reverse();
   if (view === "baseline") {
-    const baseline = attempts.find((run) => run.record.outcome === "checked") || attempts[0];
-    return baseline ? runTable("Baseline", [baseline]) : "";
+    const baseline = attempts[0];
+    return baseline ? runTable("Baseline", [baseline]) + solverLog(baseline) : "";
   }
   if (view === "compare") {
-    return runTable("Your runs", attempts) + runTable("Saved reference plans", examples);
+    const latest = runs[0];
+    return runTable("Your runs", attempts) + (latest ? solverLog(latest) : "")
+      + runTable("Saved reference plans", examples);
   }
   return attempts.map((plan, i) => runTable(`Your run ${i + 1}`, [plan]) + planDetails(plan)).join("")
     + examples.map((plan) => runTable("Saved reference", [plan]) + planDetails(plan)).join("");

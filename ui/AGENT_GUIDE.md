@@ -98,7 +98,12 @@ For a missing model-specific input, derive a value from the data where
 possible or state an assumption that fits the model. The remaining
 reference parameters apply when the pair adopts the reference assumptions. For a standalone
 Python model saved as `work/solve.py`, run it from the repository root with
-`uv run --locked python work/solve.py`. The agent can run other workspace code
+`uv run --locked python work/solve.py`. For a standalone Gurobi solve, create a
+unique directory under `work/runs/` before solving. Write `run.json` with the
+scenario and `"outcome": "started"`, and set the model's `LogFile` to
+`gurobi.log` in that directory so the viewer can show output during the solve.
+Update the record with the outcome when the run finishes or fails. The agent
+can run other workspace code
 with its applicable CLI. Use the observed Michigan data, the pair’s forecast
 or a documented proxy, and explicit assumptions. Keep the model code and its
 inputs in the workspace so the pair can reproduce the run. For an LP, state
