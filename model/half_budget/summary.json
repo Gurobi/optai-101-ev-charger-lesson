@@ -1,0 +1,15 @@
+{
+  "budget": 500000.0,
+  "capital_spent": 498000.0,
+  "revenue_npv": 1827434.5186938301,
+  "ports": 71,
+  "zctas": 6,
+  "ports_by_level": {
+    "2": 71
+  },
+  "solver_version": "14.0.0",
+  "status": 2,
+  "mip_gap": 5.811680519788698e-05,
+  "input_directory": "model/reference",
+  "objective": "discounted gross revenue; operating costs excluded"
+}

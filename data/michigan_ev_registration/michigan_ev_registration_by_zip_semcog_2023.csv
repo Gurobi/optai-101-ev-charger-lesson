@@ -1,0 +1,959 @@
+ZIP_CODE,PO_NAME,FREQUENCY
+48001,Algonac,31
+48002,Allenton,1
+48003,Almont,25
+48005,Armada,11
+48006,Avoca,3
+48009,Birmingham,525
+48014,Capac,4
+48015,Center Line,13
+48017,Clawson,59
+48021,Eastpointe,29
+48022,Emmett,4
+48023,Fair Haven,14
+48025,Franklin,309
+48026,Fraser,34
+48027,Goodells,7
+48028,Harsens Island,4
+48030,Hazel Park,41
+48032,Jeddo,1
+48033,Southfield,1599
+48034,Southfield,66
+48035,Clinton Township,70
+48036,Clinton Township,72
+48038,Clinton Township,128
+48039,Marine City,15
+48040,Marysville,18
+48041,Memphis,6
+48042,Macomb,174
+48043,Mount Clemens,22
+48044,Macomb,276
+48045,Harrison Township,120
+48047,New Baltimore,159
+48048,New Haven,23
+48049,North Street,9
+48050,New Haven,3
+48051,New Baltimore,49
+48054,East China,23
+48059,Fort Gratiot,37
+48060,Port Huron,49
+48062,Richmond,24
+48063,Columbus,4
+48064,Casco,11
+48065,Romeo,50
+48066,Roseville,62
+48067,Royal Oak,322
+48069,Pleasant Ridge,58
+48070,Huntington Woods,156
+48071,Madison Heights,97
+48072,Berkley,135
+48073,Royal Oak,276
+48074,Smiths Creek,21
+48075,Southfield,68
+48076,Southfield,138
+48079,Saint Clair,42
+48080,Saint Clair Shores,77
+48081,Saint Clair Shores,65
+48082,Saint Clair Shores,56
+48083,Troy,185
+48084,Troy,175
+48085,Troy,275
+48088,Warren,42
+48089,Warren,30
+48091,Warren,49
+48092,Warren,364
+48093,Warren,53
+48094,Washington,112
+48095,Washington,38
+48096,Ray,13
+48097,Yale,11
+48098,Troy,377
+48101,Allen Park,81
+48103,Ann Arbor,1222
+48104,Ann Arbor,533
+48105,Ann Arbor,682
+48108,Ann Arbor,435
+48109,Ann Arbor,2
+48111,Belleville,153
+48114,Brighton,150
+48116,Brighton,217
+48117,Carleton,35
+48118,Chelsea,141
+48120,Dearborn,31
+48122,Melvindale,17
+48124,Dearborn,254
+48125,Dearborn Heights,33
+48126,Dearborn,98
+48127,Dearborn Heights,142
+48128,Dearborn,57
+48130,Dexter,238
+48131,Dundee,26
+48133,Erie,10
+48134,Flat Rock,79
+48135,Garden City,40
+48137,Gregory,23
+48138,Grosse Ile,109
+48139,Hamburg,
+48140,Ida,10
+48141,Inkster,14
+48144,Lambertville,61
+48145,La Salle,12
+48146,Lincoln Park,35
+48150,Livonia,147
+48152,Livonia,152
+48154,Livonia,152
+48157,Luna Pier,4
+48158,Manchester,32
+48159,Maybee,6
+48160,Milan,56
+48161,Monroe,46
+48162,Monroe,86
+48164,New Boston,29
+48165,New Hudson,84
+48166,Newport,23
+48167,Northville,333
+48168,Northville,454
+48169,Pinckney,127
+48170,Plymouth,450
+48173,Rockwood,35
+48174,Romulus,61
+48176,Saline,292
+48178,South Lyon,354
+48179,South Rockwood,6
+48180,Taylor,113
+48182,Temperance,78
+48183,Trenton,114
+48184,Wayne,30
+48185,Westland,101
+48186,Westland,75
+48187,Canton,403
+48188,Canton,491
+48189,Whitmore Lake,91
+48191,Willis,11
+48192,Wyandotte,56
+48193,Riverview,37
+48195,Southgate,49
+48197,Ypsilanti,458
+48198,Ypsilanti,177
+48201,Detroit,58
+48202,Detroit,59
+48203,Highland Park,30
+48204,Detroit,7
+48205,Detroit,14
+48206,Detroit,28
+48207,Detroit,54
+48208,Detroit,12
+48209,Detroit,11
+48210,Detroit,9
+48211,Detroit,3
+48212,Hamtramck,27
+48213,Detroit,11
+48214,Detroit,60
+48215,Detroit,13
+48216,Detroit,28
+48217,Detroit,5
+48218,River Rouge,2
+48219,Detroit,41
+48220,Ferndale,183
+48221,Detroit,83
+48223,Detroit,31
+48224,Detroit,26
+48225,Harper Woods,29
+48226,Detroit,57
+48227,Detroit,25
+48228,Detroit,21
+48229,Ecorse,3
+48230,Grosse Pointe,256
+48234,Detroit,9
+48235,Detroit,15
+48236,Grosse Pointe,339
+48237,Oak Park,94
+48238,Detroit,11
+48239,Redford,81
+48240,Redford,42
+48242,Detroit,858
+48243,Detroit,1
+48301,Bloomfield Hills,360
+48302,Bloomfield Hills,457
+48304,Bloomfield Hills,321
+48306,Rochester,358
+48307,Rochester,389
+48309,Rochester,273
+48310,Sterling Heights,129
+48312,Sterling Heights,90
+48313,Sterling Heights,95
+48314,Sterling Heights,100
+48315,Utica,172
+48316,Utica,180
+48317,Utica,100
+48320,Keego Harbor,35
+48322,West Bloomfield,375
+48323,West Bloomfield,326
+48324,West Bloomfield,232
+48326,Auburn Hills,346
+48327,Waterford,88
+48328,Waterford,98
+48329,Waterford,132
+48331,Farmington,247
+48334,Farmington,172
+48335,Farmington,201
+48336,Farmington,175
+48340,Pontiac,22
+48341,Pontiac,34
+48342,Pontiac,12
+48346,Clarkston,165
+48348,Clarkston,220
+48350,Davisburg,50
+48353,Hartland,41
+48356,Highland,44
+48357,Highland,47
+48359,Lake Orion,715
+48360,Lake Orion,99
+48362,Lake Orion,104
+48363,Oakland,79
+48367,Leonard,23
+48370,Oxford,18
+48371,Oxford,131
+48374,Novi,292
+48375,Novi,279
+48377,Novi,222
+48380,Milford,100
+48381,Milford,109
+48382,Commerce Township,216
+48383,White Lake,64
+48386,White Lake,93
+48390,Walled Lake,199
+48393,Wixom,109
+48401,Applegate,
+48411,Atlas,
+48412,Attica,9
+48413,Bad Axe,4
+48414,Bancroft,5
+48415,Birch Run,15
+48416,Brown City,2
+48417,Burt,2
+48418,Byron,12
+48419,Carsonville,2
+48420,Clio,54
+48421,Columbiaville,10
+48422,Croswell,3
+48423,Davison,86
+48426,Decker,
+48427,Deckerville,1
+48428,Dryden,6
+48429,Durand,19
+48430,Fenton,218
+48432,Filion,1
+48433,Flushing,87
+48434,Forestville,
+48435,Fostoria,1
+48436,Gaines,5
+48437,Genesee,
+48438,Goodrich,38
+48439,Grand Blanc,302
+48440,Hadley,
+48441,Harbor Beach,7
+48442,Holly,115
+48444,Imlay City,22
+48445,Kinde,1
+48446,Lapeer,77
+48449,Lennon,2
+48450,Lexington,15
+48451,Linden,102
+48453,Marlette,3
+48454,Melvin,1
+48455,Metamora,37
+48456,Minden City,2
+48457,Montrose,6
+48458,Mount Morris,12
+48460,New Lothrop,8
+48461,North Branch,15
+48462,Ortonville,71
+48463,Otisville,13
+48464,Otter Lake,5
+48465,Palms,2
+48466,Peck,1
+48467,Port Austin,9
+48468,Port Hope,1
+48469,Port Sanilac,4
+48470,Ruth,
+48471,Sandusky,8
+48472,Snover,3
+48473,Swartz Creek,69
+48475,Ubly,4
+48476,Vernon,
+48502,Flint,3
+48503,Flint,44
+48504,Flint,20
+48505,Flint,3
+48506,Flint,26
+48507,Flint,48
+48509,Burton,23
+48519,Burton,14
+48529,Burton,12
+48532,Flint,27
+48601,Saginaw,15
+48602,Saginaw,33
+48603,Saginaw,85
+48604,Saginaw,13
+48607,Saginaw,13
+48609,Saginaw,28
+48610,Alger,3
+48611,Auburn,20
+48612,Beaverton,11
+48613,Bentley,1
+48614,Brant,
+48615,Breckenridge,1
+48616,Chesaning,14
+48617,Clare,11
+48618,Coleman,8
+48619,Comins,
+48621,Fairview,
+48622,Farwell,7
+48623,Freeland,55
+48624,Gladwin,19
+48625,Harrison,12
+48626,Hemlock,7
+48628,Hope,3
+48629,Houghton Lake,11
+48630,Houghton Lake Heights,
+48631,Kawkawlin,8
+48632,Lake,2
+48634,Linwood,6
+48635,Lupton,
+48636,Luzerne,
+48637,Merrill,10
+48638,Saginaw,36
+48640,Midland,148
+48642,Midland,162
+48647,Mio,4
+48649,Oakley,2
+48650,Pinconning,5
+48651,Prudenville,5
+48652,Rhodes,1
+48653,Roscommon,20
+48654,Rose City,
+48655,Saint Charles,9
+48656,Saint Helen,1
+48657,Sanford,20
+48658,Standish,6
+48659,Sterling,1
+48661,West Branch,12
+48662,Wheeler,1
+48701,Akron,2
+48703,Au Gres,10
+48705,Barton City,
+48706,Bay City,90
+48708,Bay City,35
+48710,University Center,
+48720,Bay Port,1
+48721,Black River,
+48722,Bridgeport,2
+48723,Caro,17
+48724,Carrollton,
+48725,Caseville,
+48726,Cass City,6
+48727,Clifford,1
+48728,Curran,
+48729,Deford,1
+48730,East Tawas,6
+48731,Elkton,1
+48732,Essexville,32
+48733,Fairgrove,2
+48734,Frankenmuth,20
+48735,Gagetown,
+48737,Glennie,1
+48738,Greenbush,2
+48739,Hale,6
+48740,Harrisville,3
+48741,Kingston,2
+48742,Lincoln,2
+48743,Long Lake,
+48744,Mayville,5
+48745,Mikado,3
+48746,Millington,17
+48747,Munger,2
+48748,National City,2
+48749,Omer,
+48750,Oscoda,16
+48754,Owendale,1
+48755,Pigeon,9
+48756,Prescott,1
+48757,Reese,2
+48759,Sebewaing,
+48760,Silverwood,2
+48761,South Branch,1
+48762,Spruce,1
+48763,Tawas City,7
+48765,Turner,
+48766,Twining,
+48767,Unionville,1
+48768,Vassar,9
+48770,Whittemore,2
+48801,Alma,22
+48806,Ashley,2
+48807,Bannister,1
+48808,Bath,22
+48809,Belding,22
+48811,Carson City,1
+48813,Charlotte,55
+48815,Clarksville,5
+48817,Corunna,9
+48818,Crystal,8
+48819,Dansville,6
+48820,DeWitt,99
+48821,Dimondale,32
+48822,Eagle,6
+48823,East Lansing,335
+48824,East Lansing,1
+48825,East Lansing,1
+48827,Eaton Rapids,38
+48829,Edmore,3
+48831,Elsie,8
+48832,Elwell,1
+48834,Fenwick,2
+48835,Fowler,2
+48836,Fowlerville,28
+48837,Grand Ledge,85
+48838,Greenville,30
+48840,Haslett,90
+48841,Henderson,
+48842,Holt,99
+48843,Howell,199
+48845,Hubbardston,
+48846,Ionia,16
+48847,Ithaca,7
+48848,Laingsburg,30
+48849,Lake Odessa,11
+48850,Lakeview,4
+48851,Lyons,3
+48853,Maple Rapids,
+48854,Mason,97
+48855,Howell,67
+48856,Middleton,
+48857,Morrice,9
+48858,Mount Pleasant,80
+48859,Mount Pleasant,
+48860,Muir,
+48861,Mulliken,1
+48862,North Star,
+48864,Okemos,303
+48865,Orleans,1
+48866,Ovid,4
+48867,Owosso,75
+48871,Perrinton,3
+48872,Perry,26
+48873,Pewamo,1
+48874,Pompeii,
+48875,Portland,23
+48876,Potterville,10
+48877,Riverdale,3
+48878,Rosebush,3
+48879,Saint Johns,49
+48880,Saint Louis,9
+48881,Saranac,10
+48883,Shepherd,12
+48884,Sheridan,1
+48885,Sidney,
+48886,Six Lakes,2
+48888,Stanton,8
+48889,Sumner,1
+48890,Sunfield,1
+48891,Vestaburg,1
+48892,Webberville,15
+48893,Weidman,11
+48894,Westphalia,3
+48895,Williamston,60
+48897,Woodland,
+48906,Lansing,73
+48910,Lansing,91
+48911,Lansing,75
+48912,Lansing,45
+48915,Lansing,29
+48917,Lansing,137
+48933,Lansing,4
+49001,Kalamazoo,44
+49002,Portage,98
+49004,Kalamazoo,46
+49006,Kalamazoo,81
+49007,Kalamazoo,26
+49008,Kalamazoo,147
+49009,Kalamazoo,330
+49010,Allegan,29
+49011,Athens,4
+49012,Augusta,22
+49013,Bangor,4
+49014,Battle Creek,32
+49015,Battle Creek,82
+49017,Battle Creek,55
+49021,Bellevue,11
+49022,Benton Harbor,62
+49024,Portage,184
+49026,Bloomingdale,3
+49028,Bronson,3
+49029,Burlington,4
+49030,Burr Oak,4
+49031,Cassopolis,23
+49032,Centreville,4
+49033,Ceresco,5
+49034,Climax,8
+49035,Cloverdale,
+49036,Coldwater,47
+49037,Battle Creek,21
+49038,Coloma,27
+49040,Colon,4
+49042,Constantine,6
+49043,Covert,3
+49045,Decatur,5
+49046,Delton,28
+49047,Dowagiac,25
+49048,Kalamazoo,59
+49050,Dowling,2
+49051,East Leroy,9
+49052,Fulton,1
+49053,Galesburg,28
+49055,Gobles,14
+49056,Grand Junction,6
+49057,Hartford,6
+49058,Hastings,44
+49060,Hickory Corners,14
+49061,Jones,3
+49064,Lawrence,7
+49065,Lawton,19
+49066,Leonidas,
+49067,Marcellus,5
+49068,Marshall,48
+49070,Martin,4
+49071,Mattawan,53
+49072,Mendon,4
+49073,Nashville,3
+49076,Olivet,7
+49078,Otsego,20
+49079,Paw Paw,40
+49080,Plainwell,49
+49082,Quincy,12
+49083,Richland,73
+49085,Saint Joseph,188
+49087,Schoolcraft,23
+49088,Scotts,5
+49089,Sherwood,2
+49090,South Haven,74
+49091,Sturgis,22
+49092,Tekonsha,
+49093,Three Rivers,35
+49094,Union City,2
+49095,Vandalia,6
+49096,Vermontville,1
+49097,Vicksburg,52
+49098,Watervliet,12
+49099,White Pigeon,5
+49101,Baroda,3
+49102,Berrien Center,2
+49103,Berrien Springs,35
+49104,Berrien Springs,
+49106,Bridgman,21
+49107,Buchanan,36
+49111,Eau Claire,9
+49112,Edwardsburg,30
+49113,Galien,3
+49115,Harbert,6
+49116,Lakeside,12
+49117,New Buffalo,96
+49119,New Troy,
+49120,Niles,96
+49125,Sawyer,16
+49126,Sodus,1
+49127,Stevensville,61
+49128,Three Oaks,21
+49129,Union Pier,30
+49130,Union,5
+49201,Jackson,181
+49202,Jackson,28
+49203,Jackson,74
+49220,Addison,3
+49221,Adrian,85
+49224,Albion,15
+49227,Allen,
+49228,Blissfield,13
+49229,Britton,12
+49230,Brooklyn,42
+49232,Camden,4
+49233,Cement City,4
+49234,Clarklake,16
+49235,Clayton,1
+49236,Clinton,18
+49237,Concord,1
+49238,Deerfield,1
+49240,Grass Lake,43
+49241,Hanover,5
+49242,Hillsdale,25
+49245,Homer,2
+49246,Horton,12
+49247,Hudson,5
+49248,Jasper,3
+49249,Jerome,13
+49250,Jonesville,12
+49251,Leslie,13
+49252,Litchfield,6
+49253,Manitou Beach,8
+49254,Michigan Center,5
+49255,Montgomery,1
+49256,Morenci,8
+49259,Munith,15
+49261,Napoleon,
+49262,North Adams,2
+49263,Norvell,
+49264,Onondaga,
+49265,Onsted,23
+49266,Osseo,3
+49267,Ottawa Lake,23
+49268,Palmyra,
+49269,Parma,15
+49270,Petersburg,23
+49271,Pittsford,3
+49272,Pleasant Lake,7
+49274,Reading,4
+49276,Riga,1
+49277,Rives Junction,10
+49279,Sand Creek,2
+49282,Somerset Center,
+49283,Spring Arbor,5
+49284,Springport,2
+49285,Stockbridge,17
+49286,Tecumseh,52
+49287,Tipton,4
+49288,Waldron,3
+49301,Ada,296
+49302,Alto,54
+49303,Bailey,
+49304,Baldwin,1
+49305,Barryton,2
+49306,Belmont,51
+49307,Big Rapids,34
+49309,Bitely,2
+49310,Blanchard,3
+49312,Brohman,1
+49315,Byron Center,182
+49316,Caledonia,127
+49318,Casnovia,1
+49319,Cedar Springs,38
+49320,Chippewa Lake,1
+49321,Comstock Park,46
+49322,Coral,2
+49323,Dorr,16
+49325,Freeport,2
+49326,Gowen,8
+49327,Grant,6
+49328,Hopkins,3
+49329,Howard City,15
+49330,Kent City,8
+49331,Lowell,80
+49332,Mecosta,4
+49333,Middleville,41
+49336,Morley,
+49337,Newaygo,21
+49338,Paris,3
+49339,Pierson,6
+49340,Remus,5
+49341,Rockford,208
+49342,Rodney,1
+49343,Sand Lake,18
+49344,Shelbyville,6
+49345,Sparta,24
+49346,Stanwood,19
+49347,Trufant,5
+49348,Wayland,43
+49349,White Cloud,7
+49401,Allendale,42
+49402,Branch,2
+49403,Conklin,5
+49404,Coopersville,23
+49405,Custer,4
+49406,Douglas,28
+49408,Fennville,47
+49410,Fountain,1
+49411,Free Soil,3
+49412,Fremont,23
+49415,Fruitport,18
+49417,Grand Haven,162
+49418,Grandville,153
+49419,Hamilton,27
+49420,Hart,7
+49421,Hesperia,6
+49423,Holland,229
+49424,Holland,268
+49425,Holton,2
+49426,Hudsonville,160
+49428,Jenison,88
+49431,Ludington,48
+49434,Macatawa,4
+49435,Marne,7
+49436,Mears,8
+49437,Montague,16
+49440,Muskegon,13
+49441,Muskegon,111
+49442,Muskegon,24
+49444,Muskegon,37
+49445,Muskegon,52
+49446,New Era,7
+49448,Nunica,18
+49449,Pentwater,10
+49450,Pullman,4
+49451,Ravenna,3
+49452,Rothbury,
+49453,Saugatuck,59
+49454,Scottville,1
+49455,Shelby,7
+49456,Spring Lake,142
+49457,Twin Lake,14
+49459,Walkerville,1
+49460,West Olive,65
+49461,Whitehall,30
+49464,Zeeland,103
+49503,Grand Rapids,174
+49504,Grand Rapids,125
+49505,Grand Rapids,133
+49506,Grand Rapids,361
+49507,Grand Rapids,100
+49508,Grand Rapids,130
+49509,Wyoming,57
+49512,Grand Rapids,123
+49519,Wyoming,67
+49525,Grand Rapids,217
+49534,Grand Rapids,66
+49544,Grand Rapids,51
+49546,Grand Rapids,293
+49548,Grand Rapids,59
+49601,Cadillac,34
+49612,Alden,9
+49613,Arcadia,2
+49614,Bear Lake,3
+49615,Bellaire,6
+49616,Benzonia,
+49617,Beulah,10
+49618,Boon,
+49619,Brethren,4
+49620,Buckley,
+49621,Cedar,14
+49622,Central Lake,7
+49623,Chase,1
+49625,Copemish,3
+49629,Elk Rapids,14
+49630,Empire,6
+49631,Evart,5
+49632,Falmouth,
+49633,Fife Lake,3
+49635,Frankfort,28
+49636,Glen Arbor,11
+49637,Grawn,16
+49638,Harrietta,
+49639,Hersey,2
+49640,Honor,8
+49642,Idlewild,
+49643,Interlochen,16
+49644,Irons,3
+49645,Kaleva,1
+49646,Kalkaska,7
+49648,Kewadin,18
+49649,Kingsley,5
+49650,Lake Ann,8
+49651,Lake City,6
+49653,Lake Leelanau,18
+49654,Leland,21
+49655,Leroy,2
+49656,Luther,5
+49657,Mc Bain,
+49659,Mancelona,4
+49660,Manistee,27
+49663,Manton,6
+49664,Maple City,19
+49665,Marion,1
+49667,Merritt,
+49668,Mesick,7
+49670,Northport,20
+49675,Onekama,3
+49676,Rapid City,11
+49677,Reed City,5
+49679,Sears,1
+49680,South Boardman,4
+49682,Suttons Bay,25
+49683,Thompsonville,10
+49684,Traverse City,120
+49685,Traverse City,62
+49686,Traverse City,160
+49688,Tustin,4
+49689,Wellston,1
+49690,Williamsburg,33
+49696,Traverse City,43
+49701,Mackinaw City,4
+49705,Afton,3
+49706,Alanson,16
+49707,Alpena,26
+49709,Atlanta,3
+49710,Barbeau,
+49712,Boyne City,35
+49713,Boyne Falls,
+49715,Brimley,3
+49716,Brutus,3
+49718,Carp Lake,
+49719,Cedarville,4
+49720,Charlevoix,54
+49721,Cheboygan,28
+49724,Dafter,2
+49725,De Tour Village,1
+49726,Drummond Island,1
+49727,East Jordan,5
+49728,Eckerman,
+49729,Ellsworth,3
+49730,Elmira,
+49733,Frederic,1
+49735,Gaylord,20
+49736,Goetzville,
+49738,Grayling,12
+49740,Harbor Springs,51
+49743,Hawks,1
+49744,Herron,
+49745,Hessel,
+49746,Hillman,7
+49747,Hubbard Lake,
+49748,Hulbert,1
+49749,Indian River,12
+49751,Johannesburg,3
+49752,Kinross,1
+49753,Lachine,1
+49755,Levering,3
+49756,Lewiston,2
+49757,Mackinac Island,3
+49759,Millersburg,1
+49760,Moran,
+49762,Naubinway,2
+49765,Onaway,4
+49766,Ossineke,3
+49768,Paradise,
+49769,Pellston,2
+49770,Petoskey,77
+49774,Pickford,3
+49775,Pointe aux Pins,1
+49776,Posen,4
+49777,Presque Isle,3
+49779,Rogers City,3
+49780,Rudyard,1
+49781,Saint Ignace,5
+49782,Beaver Island,6
+49783,Sault Sainte Marie,12
+49788,Kincheloe,
+49791,Topinabee,
+49792,Tower,
+49793,Trout Lake,
+49795,Vanderbilt,2
+49796,Walloon Lake,4
+49799,Wolverine,1
+49801,Iron Mountain,14
+49802,Kingsford,4
+49805,Allouez,1
+49806,Au Train,
+49807,Bark River,6
+49812,Carney,4
+49814,Champion,1
+49815,Channing,
+49816,Chatham,2
+49817,Cooks,
+49818,Cornell,1
+49819,Arnold,
+49820,Curtis,
+49821,Daggett,1
+49822,Deerton,1
+49825,Eben Junction,
+49826,Rumely,
+49827,Engadine,
+49829,Escanaba,17
+49831,Felch,
+49833,Little Lake,
+49834,Foster City,
+49835,Garden,1
+49836,Germfask,
+49837,Gladstone,5
+49838,Gould City,
+49839,Grand Marais,1
+49840,Gulliver,1
+49841,Gwinn,5
+49847,Hermansville,3
+49848,Ingalls,
+49849,Ishpeming,7
+49852,Loretto,
+49853,Mc Millan,1
+49854,Manistique,5
+49855,Marquette,45
+49858,Menominee,12
+49861,Michigamme,1
+49862,Munising,1
+49863,Nadeau,
+49864,Nahma,
+49866,Negaunee,8
+49868,Newberry,2
+49870,Norway,1
+49871,Palmer,
+49872,Perkins,
+49873,Perronville,
+49874,Powers,1
+49876,Quinnesec,2
+49878,Rapid River,3
+49879,Republic,
+49880,Rock,
+49881,Sagola,
+49883,Seney,
+49884,Shingleton,
+49885,Skandia,3
+49886,Spalding,
+49887,Stephenson,
+49891,Trenary,
+49892,Vulcan,4
+49893,Wallace,2
+49894,Wells,1
+49895,Wetmore,1
+49896,Wilson,1
+49901,Ahmeek,
+49902,Alpha,
+49903,Amasa,
+49905,Atlantic Mine,2
+49908,Baraga,1
+49910,Bergland,
+49911,Bessemer,2
+49912,Bruce Crossing,
+49913,Calumet,5
+49915,Caspian,
+49916,Chassell,7
+49917,Copper City,
+49918,Copper Harbor,
+49919,Covington,
+49920,Crystal Falls,6
+49921,Dodgeville,
+49922,Dollar Bay,
+49925,Ewen,
+49927,Gaastra,
+49929,Greenland,
+49930,Hancock,10
+49931,Houghton,20
+49934,Hubbell,1
+49935,Iron River,4
+49938,Ironwood,9
+49945,Lake Linden,
+49946,Lanse,
+49947,Marenisco,
+49948,Mass City,
+49950,Mohawk,5
+49952,Nisula,
+49953,Ontonagon,3
+49955,Painesdale,
+49958,Pelkie,2
+49959,Ramsay,1
+49960,Rockland,
+49961,Sidnaw,
+49962,Skanee,
+49963,South Range,
+49965,Toivola,
+49967,Trout Creek,
+49968,Wakefield,1
+49969,Watersmeet,2
+49970,Watton,
+49971,White Pine,

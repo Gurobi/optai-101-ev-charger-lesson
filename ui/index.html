@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Plan EV charging in Michigan.</title>
+  <link rel="stylesheet" href="viewer.css">
+  <script type="module" src="viewer.js"></script>
+</head>
+<body>
+  <div class="page" id="overview">
+    <header class="masthead">
+      <a href="#overview" title="Lesson overview">
+        <img class="logo" src="gurobi-logo.svg" alt="Gurobi lesson overview" width="124" height="53">
+      </a>
+      <span id="lesson-duration">1-hour lesson</span>
+      <span id="lesson-position" hidden></span>
+    </header>
+    <main id="main">
+      <section id="course-overview" aria-labelledby="overview-title">
+        <div class="course-hero">
+          <div>
+            <h1 id="overview-title" tabindex="-1">Plan EV charging in Michigan.</h1>
+            <p class="course-lead">Your goal is to maximize return on investment (ROI) for Level 2 or DC fast charging in Michigan, with a target payback period of 10 years or less. Recommend where to invest up to $1 million, whether to fund a pilot, or whether to wait for better evidence.</p>
+            <a class="action-button start-lesson" href="#data">Start</a>
+            <p id="course-status" class="muted" role="status" hidden></p>
+          </div>
+          <figure class="course-graphic">
+            <img src="ev-charging-station.webp" width="960" height="576" alt="An electric car plugged into a public charging station at Grand Canyon National Park.">
+            <figcaption>
+              <img src="michigan-outline.png" width="288" height="224" alt="Map of Michigan showing the Upper and Lower Peninsulas.">
+              <span>Installation budget <strong>$1 million</strong></span>
+            </figcaption>
+          </figure>
+        </div>
+        <section class="course-details" aria-labelledby="outline-title">
+          <h2 id="outline-title">Lesson outline.</h2>
+          <ol id="course-outline" class="course-outline" role="list"></ol>
+        </section>
+      </section>
+      <div id="series" hidden>
+        <section class="phase" aria-labelledby="phase-title">
+          <div class="lesson-navigation">
+            <div class="step-navigation">
+              <a id="previous-step" href="#overview"><span aria-hidden="true">←</span> Back</a>
+              <p id="page-position" class="muted"></p>
+            </div>
+            <div id="step-progress" class="step-progress" hidden>
+              <ol id="progress-sections" aria-label="Lesson sections" role="list"></ol>
+              <div class="progress-track">
+                <progress id="lesson-progress" aria-label="Lesson progress"></progress>
+                <span id="progress-position" aria-hidden="true"></span>
+              </div>
+            </div>
+          </div>
+          <div id="lesson-content" class="lesson-content">
+            <h2 id="phase-title" tabindex="-1"></h2>
+            <p id="action"></p>
+            <p id="agent-activity" role="status"></p>
+            <section id="agent-reply" hidden aria-live="polite">
+              <h3>Agent reply.</h3>
+              <div id="agent-reply-text" class="notes"></div>
+            </section>
+            <section id="earlier-answer" hidden>
+              <h3 id="earlier-label"></h3>
+              <p id="earlier-text"></p>
+            </section>
+            <section id="table-notes" hidden aria-label="Your notes" aria-live="polite"></section>
+            <section id="explore-question" hidden>
+              <h3>Your prompt.</h3>
+              <p id="explore-question-text"></p>
+            </section>
+            <section id="forecast-hint" class="evidence notes" hidden aria-labelledby="forecast-hint-title">
+              <h3 id="forecast-hint-title">From your Explore notes.</h3>
+              <div id="forecast-hint-text"></div>
+            </section>
+            <div id="solver-status" role="status"></div>
+            <div id="evidence"></div>
+            <details id="formulation-example" hidden>
+              <summary>See an example formulation</summary>
+              <p>Let <var>I</var> be the candidate ZIP areas, and let <var>xᵢ</var> be dollars allocated to area <var>i</var>. The assumed benefit <var>rᵢ</var> is projected charging sessions per year per dollar, estimated from your demand proxy. The cap <var>Uᵢ</var> is the maximum spend you assume each area can absorb.</p>
+              <pre class="equations" aria-label="Example linear program">maximize     ∑ᵢ∈I rᵢ xᵢ
+  subject to   ∑ᵢ∈I xᵢ ≤ 1,000,000
+               0 ≤ xᵢ ≤ Uᵢ     for every i ∈ I
+               xᵢ ∈ ℝ         for every i ∈ I</pre>
+              <p>This LP allocates dollars. An installation plan can use integer port counts and binary site-opening variables. A stochastic model can choose the same build across all demand scenarios and score its expected benefit.</p>
+            </details>
+            <section id="workspace" hidden>
+              <h3>Agent notes.</h3>
+              <div class="notes" id="notes"></div>
+            </section>
+            <form id="step-form">
+              <div id="writing-area">
+                <section id="raw-data" aria-label="Source table" hidden>
+                  <p id="data-status" class="muted" role="status"></p>
+                  <div id="data-table" role="region" aria-label="Table rows" tabindex="0"></div>
+                  <p id="data-attribution" hidden>SEMCOG’s license permits you to copy, modify and share these data under its terms.<br>Copyright © 2019 SEMCOG. All Rights Reserved. Reproduction or Use Without Permission is Prohibited.</p>
+                </section>
+                <div id="response-fields" hidden>
+                  <label for="response-answer" id="response-label"></label>
+                  <p id="response-hint" class="muted"></p>
+                  <fieldset id="forecast-choice" hidden>
+                    <legend>Use this forecast?</legend>
+                    <div class="choice-buttons">
+                      <label><input type="radio" name="forecast-choice" value="Yes"><span>Yes</span></label>
+                      <label><input type="radio" name="forecast-choice" value="No"><span>No</span></label>
+                    </div>
+                  </fieldset>
+                  <textarea id="response-answer" rows="4" maxlength="8000" aria-describedby="response-hint"></textarea>
+                </div>
+              </div>
+              <p id="forecast-pace-note" tabindex="-1" hidden>To keep the pace of the lesson going, this is the forecast you’re stuck with. In real life, you’d iterate a lot more.</p>
+              <section id="submission" aria-label="Saved responses" hidden></section>
+            </form>
+            <p id="connection" class="muted" role="status" hidden></p>
+          </div>
+          <footer class="lesson-actions">
+            <p id="response-status" class="muted" role="status"></p>
+            <button type="submit" form="step-form" class="action-button" id="page-action" disabled>Continue</button>
+          </footer>
+        </section>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

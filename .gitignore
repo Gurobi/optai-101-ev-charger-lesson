@@ -1,0 +1,35 @@
+.venv/
+.venv-linux/
+__pycache__/
+*.pyc
+.ruff_cache/
+.env
+gurobi.lic
+*.lic
+build/
+dist/
+.DS_Store
+
+# Your own model, notes, and runs stay local.
+/work/
+
+# Internal planning and local development artifacts.
+TODO.md
+todo.md
+/dev/
+/.local/
+.pytest_cache/
+.mypy_cache/
+.ty_cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+*.log
+
+# The original course archive is local reference material, not part of the lesson.
+/history/
+
+# The saved reference plans keep their solver logs for the viewer.
+!/model/reference/gurobi.log
+!/model/half_budget/gurobi.log

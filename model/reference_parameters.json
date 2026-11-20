@@ -1,0 +1,27 @@
+{
+  "ANNUAL_REVENUE_PER_EV": {
+    "2": 463.32,
+    "3": 582.12
+  },
+  "LIFETIME_REVENUE_FACTOR": 6.710081398941442,
+  "MAX_PORTS_PER_SITE": {
+    "2": 12,
+    "3": 8
+  },
+  "MIN_PORTS_PER_SITE": {
+    "2": 2,
+    "3": 2
+  },
+  "PEAK_THROUGHPUT_PER_CHARGER": {
+    "2": 8.449074074074074,
+    "3": 115.21464646464648
+  },
+  "PORT_COST": {
+    "2": 6000.0,
+    "3": 80000.0
+  },
+  "SITE_FIXED_COST": {
+    "2": 12000.0,
+    "3": 150000.0
+  }
+}

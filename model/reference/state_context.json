@@ -1,0 +1,9 @@
+{
+  "afdc_bev_2025": 112600.0,
+  "afdc_phev_2025": 42100.0,
+  "ev_equivalents_2025": 129440.0,
+  "all_registered_vehicles_2025": 8671400.0,
+  "statewide_zcta_population_2023": 10051577.0,
+  "vehicles_per_resident": 0.8626905012019507,
+  "rescale_factor_2023_to_2025": 2.8502223983793544
+}

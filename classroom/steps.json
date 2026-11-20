@@ -1,0 +1,371 @@
+[
+  {
+    "id": "data",
+    "name": "Explore",
+    "time": "0–12 min",
+    "overview": "Read the six Michigan tables. Look for records you could use to forecast charging needs and for facts you would still have to estimate.",
+    "oldHeadings": [
+      "Explore the data"
+    ],
+    "subsections": [
+      {
+        "id": "zip-2022",
+        "source": "zip-2022",
+        "label": "2022 registrations",
+        "title": "EV registrations by ZIP, 2022",
+        "action": "Read a row as a count of vehicles registered in a ZIP code. Keep one ZIP in mind for the next table.",
+        "credit": "SEMCOG",
+        "response": "Write a note (optional)"
+      },
+      {
+        "id": "zip-2023",
+        "source": "zip-2023",
+        "label": "2023 registrations",
+        "title": "EV registrations by ZIP, 2023",
+        "action": "Look for the same ZIP in this snapshot. Consider what you would need to check before treating a difference as growth.",
+        "credit": "SEMCOG",
+        "response": "Write a note (optional)"
+      },
+      {
+        "id": "state-2025",
+        "source": "state-2025",
+        "label": "Statewide totals",
+        "title": "Michigan registrations by fuel, 2025",
+        "action": "Read the fuel category alongside the count. Consider what a statewide total can tell you about a single ZIP.",
+        "credit": "Alternative Fuels Data Center",
+        "response": "Write a note (optional)"
+      },
+      {
+        "id": "stations",
+        "source": "stations",
+        "label": "Charging stations",
+        "title": "Michigan charging stations, August 2026",
+        "action": "Each row describes a station. Look at access, status and port counts before deciding which ports a driver could use.",
+        "credit": "Alternative Fuels Data Center",
+        "response": "Write a note (optional)"
+      },
+      {
+        "id": "population",
+        "source": "population",
+        "label": "Population",
+        "title": "Population by Census ZIP area, 2013–2023",
+        "action": "Find the year for a population estimate. Think about how a count per resident might change a comparison between places.",
+        "credit": "U.S. Census Bureau · American Community Survey",
+        "response": "Write a note (optional)"
+      },
+      {
+        "id": "centroids",
+        "source": "centroids",
+        "label": "Location and area",
+        "title": "Location and area by Census ZIP area, 2023",
+        "action": "Look at the coordinates and land area. These describe a ZIP Code Tabulation Area (ZCTA). Consider what you would still need to identify a buildable site.",
+        "credit": "U.S. Census Bureau · Gazetteer",
+        "response": "Write a note (optional)"
+      },
+      {
+        "id": "brief",
+        "label": "Brief",
+        "title": "Frame the decision.",
+        "action": "The company can invest up to $1 million in Michigan charging.",
+        "response": "Who will use your advice, and what outcome matters to them?",
+        "hint": "Name the decision maker and a measurable outcome. If the outcome is financial, say which quantity you would measure.",
+        "previousEdition": true
+      },
+      {
+        "id": "tables",
+        "label": "Tables",
+        "title": "Read the source tables.",
+        "action": "Spend about two minutes opening all six tables. Notice what a row represents and which columns matter.",
+        "previousEdition": true
+      },
+      {
+        "id": "observe",
+        "label": "Observe",
+        "title": "Find a starting point.",
+        "response": "What caught your attention, and which other table could help you make sense of it?",
+        "hint": "Give the source, place, year and value for your first finding. For example, registrations tell you where EVs are registered. Station records can tell you what charging is already available there.",
+        "action": "Look through the table menu. Pick a place or pattern worth investigating. You can switch tables while you write.",
+        "previousEdition": true
+      },
+      {
+        "id": "ask",
+        "label": "Ask",
+        "title": "Write your prompt.",
+        "response": "What would you like the agent to check in the data?",
+        "hint": "Name what to compare, the tables or columns to use and the result you want to see. You can ask for several checks in one prompt.",
+        "prompt": "Use the student’s saved prompt and any earlier Explore notes. Carry out each new or revised request. Give sources, units, places and years. Put the result in Explore notes for Notes and replies and leave the interpretation to the student.",
+        "action": "You’ve seen the six tables. Pick a question whose answer would help you decide what to forecast or how to choose sites.",
+        "previousEdition": true
+      },
+      {
+        "id": "review",
+        "label": "Model sketch",
+        "title": "How could these data guide a charging investment?",
+        "response": "What would you forecast, and how would your optimization model use that estimate to recommend a charging plan?",
+        "previousEdition": true
+      },
+      {
+        "id": "recap",
+        "label": "Notes and replies",
+        "continueLabel": "Review your notes",
+        "title": "Your notes and the agent’s answers.",
+        "notes": true,
+        "nextLabel": "Start forecasting"
+      }
+    ]
+  },
+  {
+    "id": "forecast",
+    "name": "Forecast",
+    "time": "12–22 min",
+    "overview": "Estimate one quantity you need to choose a site and decide which assumptions you can use.",
+    "oldHeadings": [
+      "Forecast demand"
+    ],
+    "subsections": [
+      {
+        "id": "target",
+        "label": "Target",
+        "title": "Choose what to estimate.",
+        "response": "What will you estimate? Include the units, area, and time horizon.",
+        "hint": "Specify a quantity you could check, such as sessions per day in one ZIP area in a given year.",
+        "previousEdition": true
+      },
+      {
+        "id": "inputs",
+        "label": "Inputs",
+        "title": "Choose inputs and a method.",
+        "response": "Which inputs and method did you choose, and why?",
+        "hint": "Name the source fields and one assumption that connects them to your target.",
+        "previousEdition": true
+      },
+      {
+        "id": "estimate",
+        "label": "Estimate",
+        "title": "Get a first estimate.",
+        "prompt": "Ask the agent for a first estimate or range in your chosen units and have it show the inputs and assumptions.",
+        "evidence": "forecast",
+        "response": "How should the agent present the estimate so you can check it?",
+        "previousEdition": true
+      },
+      {
+        "id": "method",
+        "label": "Method",
+        "title": "Make a forecast for one area.",
+        "response": "What would you like to estimate?",
+        "hint": "A short answer is enough. If you have an area or data source in mind, include it. The agent can propose the remaining details.",
+        "action": "Choose a quantity that would help you decide where to add charging ports. Start with one area and one time period.",
+        "prompt": "Start from the pair’s short answer and Explore notes. Propose reasonable defaults for missing details such as area, period, units and method, and label them as assumptions. Put a concise provisional estimate or range, sources, key assumptions, equation, and proposed code in Forecast notes. Do not send the pair back to Method for missing details or ask them to calculate.",
+        "fillMissingDetails": true
+      },
+      {
+        "id": "check",
+        "label": "Assumptions",
+        "title": "Decide which assumptions to use.",
+        "response": "Use this forecast?",
+        "hint": "Choose once. If no, you can note what you would change.",
+        "notes": true,
+        "evidence": "forecast",
+        "action": "Review the estimate, equation, code and assumptions.",
+        "prompt": "For Yes, retain the proposal. For No, keep the provisional forecast and record any suggested change as a limitation. The viewer displays the pacing message and stays on Forecast until the pair chooses Continue to Formulate. Do not revise the forecast or ask for another approval."
+      },
+      {
+        "id": "review",
+        "label": "Review",
+        "title": "Record the forecast and its limits.",
+        "action": "Distinguish what you observed from what you assumed.",
+        "notes": true,
+        "response": "What was your estimate, and which assumption would you test?",
+        "previousEdition": true
+      }
+    ]
+  },
+  {
+    "id": "formulate",
+    "name": "Formulate",
+    "time": "22–35 min",
+    "overview": "Write an optimization model, check it by hand on a small case, and run it.",
+    "oldHeadings": [],
+    "subsections": [
+      {
+        "id": "decisions",
+        "label": "Decisions",
+        "title": "Formulate the investment decision.",
+        "response": "What should the model decide, optimize, and constrain?",
+        "hint": "Name the candidate areas, the decision variables and their domains, the objective and units, and the budget and other limits. Identify the source fields and assumptions behind the numbers.",
+        "action": "Build a model using the Michigan data and your forecast. If the evidence is too thin to recommend a build, choose a proxy or a small set of assumptions you can test. You can use a linear, mixed-integer, or stochastic model.",
+        "prompt": "Write the pair’s actual mathematical formulation in Formulate notes using a fenced math block for the objective, indexed constraints and variable domains. Define sets, variables, parameters and units. Tie inputs to the Michigan data and label assumptions. Use the $1 million baseline budget and fill in missing installation costs from work/parameters.json when the model needs them. For stochastic models, specify scenarios, probabilities, and which decisions are made before the scenario is known.",
+        "recall": {
+          "key": "forecast/check",
+          "label": "Your forecast assumption decisions"
+        },
+        "notes": true
+      },
+      {
+        "id": "objective",
+        "label": "Objective",
+        "title": "Define the objective.",
+        "response": "What makes one plan better than another, and how will you measure it?",
+        "hint": "Name the score and its units, and state whether larger or smaller values are better.",
+        "previousEdition": true
+      },
+      {
+        "id": "limits",
+        "label": "Limits",
+        "title": "Name the constraints.",
+        "response": "What constraints will you impose? Give the units or threshold for each.",
+        "hint": "Give the number and units for each limit you choose and say which decisions it applies to.",
+        "previousEdition": true
+      },
+      {
+        "id": "trace",
+        "label": "Trace",
+        "title": "Check the formulation by hand.",
+        "response": "What result do you expect from your model on a small test case?",
+        "hint": "Predict which plan the model should prefer or which constraint it should enforce. The agent can supply example values.",
+        "action": "Pick one behavior to test. For example, if the budget can fund only one of two sites, which should the model select?",
+        "prompt": "Use the pair’s prediction or the behavior they want to test. Supply any missing numeric inputs with a small, feasible example consistent with the agreed formulation. Evaluate the equations and show the inputs and result in Formulate notes. A qualitative prediction is enough.",
+        "notes": true,
+        "fillMissingDetails": true
+      },
+      {
+        "id": "implement",
+        "label": "Implement",
+        "title": "Review the formulation before solving.",
+        "response": "Should the agent run the model? Mention any change you want first.",
+        "hint": "A short approval such as “Run it” is enough. The agent can finish the test case.",
+        "prompt": "A short approval is enough to run the model. If the Trace case is missing or incomplete, choose concrete inputs consistent with the formulation, evaluate it yourself, and show the inputs and result in Formulate notes. If the pair requests a model change, apply it and repeat the check. Once the pair approves the run, implement and execute the baseline using the viewer guide, with standalone code by default and put the outcome and independent checks in Test notes. Never send the pair back to Trace for more inputs.",
+        "notes": true,
+        "evidence": "model",
+        "recall": {
+          "key": "formulate/trace",
+          "label": "What you expected in the small case"
+        },
+        "fillMissingDetails": true
+      }
+    ]
+  },
+  {
+    "id": "test",
+    "name": "Test",
+    "time": "35–50 min",
+    "overview": "Review the first plan, then change one input and compare the results.",
+    "oldHeadings": [
+      "Run the model",
+      "Read the solver log"
+    ],
+    "subsections": [
+      {
+        "id": "baseline",
+        "label": "Baseline",
+        "title": "Run the baseline.",
+        "prompt": "Ask the agent to run your agreed baseline and show the outcome and checks.",
+        "evidence": "baseline",
+        "response": "What is the baseline you want to run?",
+        "previousEdition": true
+      },
+      {
+        "id": "trace",
+        "label": "Trace",
+        "title": "Check the first plan.",
+        "response": "Which part of the plan did you check, and do your numbers agree?",
+        "hint": "Show your numbers and units. If a run failed, identify the failed check and what it prevents you from claiming.",
+        "action": "Pick a site from the run or a calculation from the notes below. For a cost check, add the site opening cost to the number of ports times the cost per port.",
+        "notes": true,
+        "evidence": "trace",
+        "previousEdition": true
+      },
+      {
+        "id": "predict",
+        "label": "Predict",
+        "title": "Predict the effect of changing one input.",
+        "response": "Which input will you change, and how do you expect it to affect the baseline plan?",
+        "hint": "Give the new input value. Predict how it will change the objective value or identify a constraint the baseline plan would violate. Explain why.",
+        "action": "Review the baseline below, then switch roles. The partner who checked the formulation now directs the test. Save your prediction before the agent runs it.",
+        "prompt": "Read the saved prediction before running the test. Keep other inputs fixed. Check the original sites and counts first where feasible. Label any newly chosen plan separately. Put the results in Test notes.",
+        "notes": true,
+        "evidence": "trace"
+      },
+      {
+        "id": "stress",
+        "label": "Stress test",
+        "title": "Test the changed condition.",
+        "action": "Where feasible, check the original build under the changed condition.",
+        "prompt": "Ask the agent to read your saved prediction and test the changed condition. If you also redesign the plan, ask it to show that result separately.",
+        "response": "How should the agent test the change? What should it hold fixed?",
+        "hint": "State the new input value, what stays fixed, and how you will measure the effect.",
+        "previousEdition": true
+      },
+      {
+        "id": "compare",
+        "label": "Compare",
+        "title": "Compare the two results.",
+        "response": "How close was your prediction? Does the committee need a different plan?",
+        "hint": "Compare a number from each case in the same units, or show which limit failed. Say whether the sites and port counts stayed the same.",
+        "notes": true,
+        "evidence": "compare",
+        "recall": {
+          "key": "test/predict",
+          "label": "Your prediction"
+        }
+      }
+    ]
+  },
+  {
+    "id": "recommend",
+    "name": "Recommend",
+    "time": "50–60 min",
+    "overview": "Give the committee a decision backed by a test result and say what would change your vote.",
+    "oldHeadings": [
+      "Read the plan"
+    ],
+    "subsections": [
+      {
+        "id": "decision",
+        "label": "Decision",
+        "title": "Choose what to authorize.",
+        "response": "What should the committee authorize?",
+        "previousEdition": true
+      },
+      {
+        "id": "evidence",
+        "label": "Evidence",
+        "title": "Pick the result that supports it.",
+        "response": "Which result supports your recommendation, and what is its main limitation?",
+        "hint": "Cite one specific result with units where they apply. Tie it to your recommendation and name one limitation.",
+        "previousEdition": true
+      },
+      {
+        "id": "challenge",
+        "label": "Challenge",
+        "title": "Hear the other side.",
+        "response": "What was your partner’s strongest objection, and how would you check it?",
+        "hint": "Name evidence you could collect and a finding that would change your vote.",
+        "action": "One partner proposes a build, a pilot or a decision to wait. The other uses a gap in the data or a result from the test to challenge that proposal.",
+        "recall": {
+          "key": "test/compare",
+          "label": "Your test results"
+        },
+        "previousEdition": true
+      },
+      {
+        "id": "pitch",
+        "label": "Pitch",
+        "title": "Give the committee 90 seconds.",
+        "response": "What should the committee authorize now, and what would change your recommendation?",
+        "hint": "Cite one test result with units where they apply. For a build, give areas, charger types and port counts. For a pilot or a decision to wait, say what to measure, how to get it and what result would justify building.",
+        "action": "One partner proposes a build, a pilot or a decision to wait. The other raises one objection using a gap in the data or a test result. Address it in your 90-second pitch, then save your advice here.",
+        "recall": {
+          "key": "test/compare",
+          "label": "Your test results"
+        }
+      },
+      {
+        "id": "submit",
+        "label": "Submit",
+        "title": "Hand in your recommendation.",
+        "action": "Review your modeling answers below. The download includes your Explore responses too. Use Back to revisit an answer."
+      }
+    ]
+  }
+]

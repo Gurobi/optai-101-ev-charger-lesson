@@ -1,0 +1,46 @@
+
+Gurobi 14.0.0 (armlinux64) logging started Tue Nov 17 10:03:44 2026
+
+Gurobi Optimizer version 14.0.0 build v14.0.0rc1 (armlinux64 - "Docker Hardened Images/Debian GNU/Linux 13 (trixie)")
+
+CPU model: ARM64
+Thread count: 12 physical cores, 12 logical processors, using up to 12 threads
+
+Optimize a model with 6945 rows, 5952 columns and 17856 nonzeros (Max)
+Model fingerprint: 0x82041cda
+Model has 1984 linear objective coefficients
+Variable types: 1984 continuous, 3968 integer (1984 binary)
+Coefficient statistics:
+  Matrix range     [2e-03, 2e+05]
+  Objective range  [3e+03, 4e+03]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e+00, 1e+06]
+
+Found heuristic solution: objective -0.0000000
+Presolve removed 2446 rows and 1743 columns
+Presolve time: 0.02s
+Presolved: 4499 rows, 4209 columns, 12386 nonzeros
+Variable types: 1240 continuous, 2969 integer (1650 binary)
+
+Root relaxation: objective 3.637210e+06, 1502 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 3637210.32    0    2   -0.00000 3637210.32      -     -    0s
+H    0     0                    3613762.1105 3637210.32  0.65%     -    0s
+H    0     0                    3615683.3379 3637210.32  0.60%     -    0s
+     0     0     cutoff    0      3615683.34 3615683.34 -0.00%     -    0s
+
+Cutting planes:
+  Gomory: 2
+  StrongCG: 2
+  RLT: 1
+
+Explored 1 nodes (1536 simplex iterations) in 0.04 seconds (0.05 work units)
+Thread count was 12 (of 12 available processors)
+
+Solution count 3: 3.61568e+06 3.61376e+06 -0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.615683337942e+06, best bound 3.615683337942e+06, gap 0.0000%
