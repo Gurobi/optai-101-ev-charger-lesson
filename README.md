@@ -8,20 +8,14 @@ with a 90-second recommendation to the investment committee.
 
 ## Start with your coding agent.
 
-Before class, students need access to a coding agent that can run terminal
-commands and [uv](https://docs.astral.sh/uv/getting-started/installation/). The lesson
-can use saved plans during Test when live solves are unavailable.
+1. Paste this into Codex or Claude Code in a workspace where the agent can
+   clone repositories and run terminal commands.
 
-For live statewide solves, set up a free academic Gurobi license where the
-agent runs Python. The statewide model exceeds the size limit of the
-license bundled with `gurobipy`.
-[Get a free academic Gurobi license](https://www.gurobi.com/academia/academic-program-and-licenses/).
+   > Let's do this lesson: https://github.com/Gurobi/optai-101-ev-charger-lesson
 
-1. Copy this repository's clone URL or use the URL your instructor gave you.
-   Paste the following into your coding agent and replace `<repo URL>`.
-
-   > Clone <repo URL>, read AGENTS.md, and guide us through the one-hour
-   > Michigan EV charging lesson. Start the viewer and give us the browser URL.
+   The agent should open or clone the repository, read `AGENTS.md`, and
+   start the lesson viewer. If it stops at a summary, ask it to do those
+   three things and give you the viewer URL.
 
 2. Open the URL the agent gives you, usually `http://127.0.0.1:8765/`. Put
    the browser on one side of your screen and the agent's chat on the other.
@@ -33,7 +27,11 @@ license bundled with `gurobipy`.
    It reads your saved answers from the workspace. At **Recommend → Submit**,
    download one `student-responses.md` per pair.
 
-If the repo is already open in the agent, start the prompt at “Read AGENTS.md.”
+Before class, install [uv](https://docs.astral.sh/uv/getting-started/installation/)
+where the agent runs. Live statewide solves require a Gurobi license that
+supports the model size. The lesson includes saved plans for Test.
+[Get a free academic Gurobi license](https://www.gurobi.com/academia/academic-program-and-licenses/).
+
 The [student guide](classroom/README.md) has the checkpoints and hand-in details.
 
 ### Watch for saved answers.
@@ -50,6 +48,22 @@ To use Claude Code, ask it to run `uv run --locked python lesson.py watch
 --events` with its Monitor tool, where available, and treat each JSON
 event's `message` as the student’s next lesson turn. Choose one watcher
 per workspace and stop it at the end of the lesson.
+
+## Use a web-based chat.
+
+If you only have browser chat, use the [student guide](classroom/README.md)
+as a worksheet. Give the chat the guide and the relevant table excerpts
+from the [data sources](data/README.md). Paste the material if the chat
+can't open GitHub links.
+
+> Guide us through Explore, Forecast, Formulate, Test, and Recommend one
+> step at a time. Use the supplied data. Ask us to choose our assumptions
+> and predict the outcome before checking a small case by hand.
+
+For Test, compare your prediction with the [saved reference plan](model/reference/README.md)
+and [half-budget plan](model/half_budget/README.md), or check a small case
+by hand. Record your reasoning and recommendation in one Markdown file
+per pair. This route works entirely in chat and uses manual hand-in.
 
 ## Teach the lesson.
 

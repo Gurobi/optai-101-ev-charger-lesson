@@ -19,7 +19,7 @@ agent follows the [session guide](SESSION.md) in class and on screen.
    [Get a free academic Gurobi license](https://www.gurobi.com/academia/academic-program-and-licenses/).
 3. Have students preflight with their agent.
 
-   > Clone <repo URL>, read AGENTS.md, and run the classroom license
+   > Clone https://github.com/Gurobi/optai-101-ev-charger-lesson, read AGENTS.md, and run the classroom license
    > preflight. We will start the exercise in class.
 
    The agent runs `uv run --locked python lesson.py check --solver`.
